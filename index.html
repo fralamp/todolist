@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>To Do List</title>
+    <link rel="icon" href="title-icon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">To Do List</h1>
+    <div class="todolist">
+        <div class="todolist__btn-group">
+            <div class="todolist__btn">
+                <input class="todolist__btn-input" type="radio" id="btn-all-tasks" name="radio" value="all">
+                <label class="todolist__btn-label" for="btn-all-tasks" type="radio">ALL</label>
+            </div>
+            <div class="todolist__btn">
+                <input class="todolist__btn-input" type="radio" id="btn-done-tasks" name="radio" value="done">
+                <label class="todolist__btn-label" for="btn-done-tasks" type="radio">DONE</label>
+            </div>
+            <div class="todolist__btn">
+                <input class="todolist__btn-input" type="radio" id="btn-undone-task" name="radio" value="undone">
+                <label class="todolist__btn-label" for="btn-undone-task" type="radio">UNDONE</label>
+            </div>
+        </div>
+        <div class="todolist__new-task">
+            <input class="todolist__input-new-task" type="text" autofocus id="new-task" placeholder="add new a task">
+            <button class="todolist__btn-new-task" id="add-task">ADD</button>
+        </div>
+        <div class="todolist__manage">
+            <label class="todolist__checkbox">
+                <input id="checkAll" type="checkbox" value="check-all-task">
+                <div class="todolist__checkbox-div"></div>
+            </label>
+            <div class="todolist__task-text">TASKS</div>
+
+
+
+            <div class="todolist__btn-del-task visible" id="del-task" value="del-all-tast">
+                <svg class=="todolist__icon-del" version="1.1" width="19" height="19" viewBox="0 0 20 20">
+                <path d="M5 16.25c0 1.035 0.839 1.875 1.875 1.875h6.25c1.035 0 1.875-0.84 1.875-1.875l1.25-10h-12.5l1.25 10zM11.875 8.125h1.25v8.125h-1.25v-8.125zM9.375 8.125h1.25v8.125h-1.25v-8.125zM6.875 8.125h1.25v8.125h-1.25v-8.125zM15.938 3.75h-4.063c0 0-0.28-1.25-0.625-1.25h-2.5c-0.346 0-0.625 1.25-0.625 1.25h-4.063c-0.518 0-0.938 0.419-0.938 0.938s0 0.938 0 0.938h13.75c0 0 0-0.419 0-0.938s-0.42-0.938-0.938-0.938z"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="todolist__list" id="tasks">
+
+            
+        </div>
+        <div class="todolist__count">
+            <span>Count of all tasks:</span>
+            <span class="todolist__counter" id="count"></span>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+<!-- <script src="./refactoringIndex.js"></script> -->
+</html>
